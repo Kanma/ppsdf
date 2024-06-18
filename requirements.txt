@@ -1,0 +1,5 @@
+numpy==1.25.0
+torch==2.0.1
+scikit-image==0.21.0
+open3d==0.17.0
+scipy==1.11.1
