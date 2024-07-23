@@ -59,6 +59,6 @@ To run with default arguments:
 
 ## License
 
-Maintained by Ante MARIĆ and licensed under the MIT License.
+Maintained by Ante MARIĆ and licensed under the GPL-3.0 License.
 
 Copyright (c) 2024 Idiap Research Institute <contact@idiap.ch>
