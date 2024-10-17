@@ -161,11 +161,11 @@ if __name__ == '__main__':
     d_hat = d_hat.cpu().numpy()
 
     # visualization
-    print("Visualizing SDF...")
-    vis.mesh_vis(d_hat, cut_x=args.cut_x, cut_y=args.cut_y, cut_z=args.cut_z)
-    vis.grad_vis(d_hat, dd_hat)
-    vis.slice_vis(d_hat, d,
-                  title=f'ppSDF ({args.n_data} samples, {args.n_seg} segments, cubic polynomials)')
+    # print("Visualizing SDF...")
+    # vis.mesh_vis(d_hat, cut_x=args.cut_x, cut_y=args.cut_y, cut_z=args.cut_z)
+    # vis.grad_vis(d_hat, dd_hat)
+    # vis.slice_vis(d_hat, d,
+    #               title=f'ppSDF ({args.n_data} samples, {args.n_seg} segments, cubic polynomials)')
 
     # save results
     if args.save:

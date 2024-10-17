@@ -1,0 +1,26 @@
+name: Build
+run-name: Test of commit "${{ github.event.head_commit.message }}"
+
+on:
+  push:
+    branches:
+      - "*"
+
+jobs:
+  build:
+    name: Test
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clone the repository
+      uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+    
+    - name: Test the software
+      run: |
+        python ycb_downloader.py
+        python reconstruct.py --device cpu --object=035_power_drill --n_seg=5 --n_data=200
